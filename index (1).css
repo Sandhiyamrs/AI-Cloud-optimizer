@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Dark futuristic background */
+    --background: 220 40% 5%;
+    --foreground: 0 0% 100%;
+
+    /* Glassmorphism cards */
+    --card: 220 35% 10%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 220 35% 10%;
+    --popover-foreground: 0 0% 100%;
+
+    /* Neon cyan primary */
+    --primary: 190 100% 50%;
+    --primary-foreground: 220 40% 5%;
+
+    /* Electric green secondary */
+    --secondary: 150 100% 50%;
+    --secondary-foreground: 220 40% 5%;
+
+    /* Muted dark elements */
+    --muted: 220 30% 15%;
+    --muted-foreground: 220 10% 60%;
+
+    /* Purple accent */
+    --accent: 270 60% 70%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Destructive red with glow */
+    --destructive: 0 100% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders with glow effect */
+    --border: 220 30% 20%;
+    --input: 220 30% 20%;
+    --ring: 190 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom neon colors */
+    --neon-cyan: 190 100% 50%;
+    --neon-green: 150 100% 50%;
+    --neon-purple: 270 60% 70%;
+    --neon-orange: 30 100% 60%;
+    
+    /* Gradients */
+    --gradient-dark: linear-gradient(135deg, hsl(220, 40%, 5%) 0%, hsl(220, 50%, 2%) 100%);
+    --gradient-neon: linear-gradient(135deg, hsl(190, 100%, 50%) 0%, hsl(270, 60%, 70%) 100%);
+    --gradient-success: linear-gradient(135deg, hsl(150, 100%, 50%) 0%, hsl(190, 100%, 50%) 100%);
+    --gradient-warning: linear-gradient(135deg, hsl(30, 100%, 60%) 0%, hsl(0, 100%, 60%) 100%);
+    
+    /* Shadows with glow */
+    --shadow-cyan-glow: 0 0 20px hsla(190, 100%, 50%, 0.5);
+    --shadow-green-glow: 0 0 20px hsla(150, 100%, 50%, 0.5);
+    --shadow-purple-glow: 0 0 20px hsla(270, 60%, 70%, 0.5);
+    --shadow-card: 0 8px 32px hsla(0, 0%, 0%, 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: linear-gradient(135deg, hsl(220, 40%, 5%) 0%, hsl(220, 50%, 2%) 100%);
+    min-height: 100vh;
+  }
+  
+  /* Custom animations */
+  @keyframes glow-pulse {
+    0%, 100% {
+      filter: drop-shadow(0 0 8px currentColor) brightness(1);
+    }
+    50% {
+      filter: drop-shadow(0 0 20px currentColor) brightness(1.2);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes border-glow {
+    0%, 100% {
+      box-shadow: 0 0 10px currentColor, inset 0 0 10px currentColor;
+    }
+    50% {
+      box-shadow: 0 0 20px currentColor, inset 0 0 20px currentColor;
+    }
+  }
+  
+  .animate-glow-pulse {
+    animation: glow-pulse 2s ease-in-out infinite;
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .animate-border-glow {
+    animation: border-glow 2s ease-in-out infinite;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
