@@ -21,6 +21,27 @@ It helps reduce unnecessary spending, predicts future usage, and automatically s
 - 🔔 **Smart Alerts & Notifications**
 
 ---
+## 📸 Project Screenshots
+
+### 🏠 Home Page
+[(image home.jpg)](https://raw.githubusercontent.com/Sandhiyamrs/project-Instagram-Automation/main/assets/insta-home.jpg)
+
+### ⚙ Analytics Page
+[(image Analytics.jpg)](https://raw.githubusercontent.com/Sandhiyamrs/project-Instagram-Automation/main/assets/insta-analytics.jpg)
+
+### 🎨 Scheduler Page
+[(image Scheduler.jpg)](https://raw.githubusercontent.com/Sandhiyamrs/project-Instagram-Automation/main/assets/insta-scheduler.jpg)
+
+### ⚙ Auto engage Page
+[(image Auto engage page.jpg)](https://raw.githubusercontent.com/Sandhiyamrs/project-Instagram-Automation/main/assets/insta-auto-engage.jpg)
+
+### ⚙ Settings1 Page
+[(image Settings1.jpg)](https://raw.githubusercontent.com/Sandhiyamrs/project-Instagram-Automation/main/assets/insta-settings1.jpg)
+
+### ⚙ Settings2 Page
+[(image Settings2.jpg)](https://raw.githubusercontent.com/Sandhiyamrs/project-Instagram-Automation/main/assets/insta-settings2.jpg)
+
+---
 
 ## 🧰 Tech Stack
 
